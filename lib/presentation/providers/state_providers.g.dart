@@ -6,11 +6,11 @@ part of 'state_providers.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$counterHash() => r'd02e30c6eb0b185ef1e074d518751cabb603e1fb';
+String _$counterHash() => r'8e989e4cbdf8f46a7cad94d2eadd81fd62716044';
 
 /// See also [Counter].
 @ProviderFor(Counter)
-final counterProvider = AutoDisposeNotifierProvider<Counter, int>.internal(
+final counterProvider = NotifierProvider<Counter, int>.internal(
   Counter.new,
   name: r'counterProvider',
   debugGetCreateSourceHash:
@@ -19,7 +19,7 @@ final counterProvider = AutoDisposeNotifierProvider<Counter, int>.internal(
   allTransitiveDependencies: null,
 );
 
-typedef _$Counter = AutoDisposeNotifier<int>;
+typedef _$Counter = Notifier<int>;
 String _$darkModeHash() => r'634a6dbf2c11110849e233ea8d53a7e95a9922e3';
 
 /// See also [DarkMode].
@@ -34,11 +34,11 @@ final darkModeProvider = AutoDisposeNotifierProvider<DarkMode, bool>.internal(
 );
 
 typedef _$DarkMode = AutoDisposeNotifier<bool>;
-String _$usernameHash() => r'33a6aa2237785fcd9eb5f59befb457922e94facc';
+String _$usernameHash() => r'aea2043c5ce3d33a88660af4c74cb6a290399968';
 
 /// See also [Username].
 @ProviderFor(Username)
-final usernameProvider = AutoDisposeNotifierProvider<Username, String>.internal(
+final usernameProvider = NotifierProvider<Username, String>.internal(
   Username.new,
   name: r'usernameProvider',
   debugGetCreateSourceHash:
@@ -47,6 +47,6 @@ final usernameProvider = AutoDisposeNotifierProvider<Username, String>.internal(
   allTransitiveDependencies: null,
 );
 
-typedef _$Username = AutoDisposeNotifier<String>;
+typedef _$Username = Notifier<String>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member
